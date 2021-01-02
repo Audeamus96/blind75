@@ -2,6 +2,7 @@
 #include <unordered_set>
 #include <vector>
 
+// Given an array of integers, returns true if array contains any duplicates
 bool containsDuplicate(std::vector<int>& nums) {
 	std::unordered_set<int> dupe;
 
@@ -15,6 +16,7 @@ bool containsDuplicate(std::vector<int>& nums) {
 	return false; 
 }
 
+// Tests
 bool test1() { 
 	std::vector<int> test {1,2,3,1};
 	bool expected = true;
